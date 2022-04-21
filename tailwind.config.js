@@ -6,7 +6,15 @@ module.exports = {
       mulish: ["Mulish", "serif"],
       poppins: ["Poppins", "serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#EB5757",
+        guests: "#BDBDBD",
+        "big-headings": "#333333",
+        "small-headings": "#4F4F4F",
+        "product-desc": "#828282",
+      },
+    },
   },
   plugins: [],
 };
