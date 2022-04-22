@@ -2,7 +2,7 @@ import Products from "./Products";
 
 const Main = () => {
   return (
-    <main className="mt-[37px]">
+    <main className="mt-[37px] mb-[78px]">
       {/* heading */}
       <div className="flex justify-between font-montserrat">
         <h2 className="text-lg font-bold text-big-headings">
@@ -12,7 +12,7 @@ const Main = () => {
       </div>
 
       {/* products */}
-      <section className="mt-6">
+      <section className="grid gap-8 mt-6">
         <Products />
       </section>
     </main>

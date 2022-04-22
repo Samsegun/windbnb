@@ -3,9 +3,14 @@ import star from "../../assets/star.png";
 
 const Products = () => {
   return data.map((product, idx) => (
-    <article key={idx}>
-      <img src={product.photo} alt="apartment" className="rounded-3xl" />
-
+    <article key={idx} className="cursor-pointer">
+      <div className="w-full h-[240px]">
+        <img
+          src={product.photo}
+          alt="apartment"
+          className="object-cover object-center w-full h-full rounded-3xl"
+        />
+      </div>
       {/* product info */}
       <div className="flex items-center justify-between mt-4 text-xs font-montserrat text-product-desc">
         {product.superHost ? (
@@ -17,6 +22,7 @@ const Products = () => {
           </div>
         ) : null}
 
+        {/* product type and number of birds */}
         <div className="min-w-[160px]">
           {product.type}
           {product.beds ? <span>.{product.beds} beds</span> : null}
@@ -28,7 +34,9 @@ const Products = () => {
       </div>
 
       {/* product title */}
-      <h3 className="text-big-headings">{product.title}</h3>
+      <h3 className="mt-3 text-sm font-bold text-big-headings font-montserrat">
+        {product.title}
+      </h3>
     </article>
   ));
 };

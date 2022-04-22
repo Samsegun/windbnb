@@ -20,6 +20,16 @@ function App() {
         {/* main body */}
         <Main />
       </div>
+
+      <footer className="my-6 text-sm text-center font-montserrat text-product-desc">
+        <p>
+          Created by{" "}
+          <a href="/" className="font-bold underline">
+            Samsegun
+          </a>{" "}
+          - <a href="/">devChallenges.io</a>
+        </p>
+      </footer>
     </div>
   );
 }
