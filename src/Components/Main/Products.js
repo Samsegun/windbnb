@@ -1,8 +1,11 @@
 import data from "../../stays.json";
 import star from "../../assets/star.png";
+import { useState } from "react";
 
 const Products = () => {
-  return data.map((product, idx) => (
+  const [products, setProducts] = useState(data);
+
+  return products.map((product, idx) => (
     <article key={idx} className="cursor-pointer">
       <div className="w-full h-[240px]">
         <img

@@ -21,7 +21,8 @@ function App() {
         <Main />
       </div>
 
-      <footer className="my-6 text-sm text-center font-montserrat text-product-desc">
+      {/* footer */}
+      <footer className="py-6 text-sm text-center font-montserrat text-product-desc">
         <p>
           Created by{" "}
           <a href="/" className="font-bold underline">
