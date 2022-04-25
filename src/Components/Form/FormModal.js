@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import icon from "../../assets/location-icon.png";
 
-// reducer func for adding child and adult guests
+// reducer func for adding and subtracting child and adult guests
 const initialState = { adultFigure: 0, childrenFigure: 0 };
 const reducer = (state, action) => {
   switch (action) {
